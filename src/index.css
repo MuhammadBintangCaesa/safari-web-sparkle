@@ -8,48 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Ocean depth theme */
-    --background: 215 45% 15%;
-    --foreground: 210 40% 98%;
+    /* Modern Travel Theme */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
-    --card: 215 40% 20%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 215 40% 18%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 192 100% 50%;
-    --primary-foreground: 215 45% 10%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 25 100% 63%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 215 30% 25%;
-    --muted-foreground: 210 20% 70%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 192 100% 45%;
+    --accent: 33 100% 50%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 215 30% 30%;
-    --input: 215 30% 25%;
-    --ring: 192 100% 50%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
 
-    --radius: 1rem;
+    --radius: 0.75rem;
 
-    /* Ocean gradients */
-    --ocean-gradient: linear-gradient(180deg, hsl(215, 50%, 10%) 0%, hsl(215, 45%, 15%) 50%, hsl(215, 40%, 20%) 100%);
-    --ocean-glow: linear-gradient(135deg, hsl(192, 100%, 50%) 0%, hsl(192, 100%, 40%) 100%);
-    --coral-gradient: linear-gradient(135deg, hsl(25, 100%, 63%) 0%, hsl(15, 100%, 58%) 100%);
+    /* Travel gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(221, 83%, 53%) 0%, hsl(221, 83%, 43%) 100%);
+    --gradient-sunset: linear-gradient(135deg, hsl(33, 100%, 50%) 0%, hsl(14, 100%, 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(221, 83%, 53%) 0%, hsl(271, 76%, 53%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(210, 40%, 98%) 100%);
     
     /* Shadows */
-    --glow-cyan: 0 0 40px hsl(192 100% 50% / 0.3);
-    --glow-coral: 0 0 30px hsl(25 100% 63% / 0.4);
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.1);
+    --shadow-glow: 0 0 30px hsl(221 83% 53% / 0.3);
     
     /* Animations */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 }

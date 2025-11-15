@@ -76,10 +76,6 @@ export default {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-20px)" },
         },
-        "wave": {
-          "0%, 100%": { transform: "translateX(0)" },
-          "50%": { transform: "translateX(20px)" },
-        },
         "fade-in-up": {
           "0%": {
             opacity: "0",
@@ -104,30 +100,39 @@ export default {
             transform: "scale(1)",
           },
         },
-        "bubble": {
-          "0%": {
-            transform: "translateY(0) scale(1)",
-            opacity: "0.8",
-          },
-          "50%": {
-            transform: "translateY(-100px) scale(1.2)",
-            opacity: "0.4",
-          },
-          "100%": {
-            transform: "translateY(-200px) scale(0.8)",
-            opacity: "0",
-          },
+        "slide-in-right": {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        "slide-in-left": {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        "gradient-shift": {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+        },
+        "shimmer": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+        "pulse-glow": {
+          "0%, 100%": { boxShadow: "0 0 20px hsl(221 83% 53% / 0.3)" },
+          "50%": { boxShadow: "0 0 40px hsl(221 83% 53% / 0.6)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "float": "float 3s ease-in-out infinite",
-        "wave": "wave 4s ease-in-out infinite",
         "fade-in-up": "fade-in-up 0.6s ease-out",
         "fade-in": "fade-in 0.8s ease-out",
         "scale-in": "scale-in 0.5s ease-out",
-        "bubble": "bubble 6s ease-in-out infinite",
+        "slide-in-right": "slide-in-right 0.6s ease-out",
+        "slide-in-left": "slide-in-left 0.6s ease-out",
+        "gradient-shift": "gradient-shift 8s ease infinite",
+        "shimmer": "shimmer 2s infinite",
+        "pulse-glow": "pulse-glow 3s ease-in-out infinite",
       },
     },
   },
